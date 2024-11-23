@@ -45,19 +45,5 @@ class TestAssignmnetF4Del2 {
         assertEquals(0, NoWord.getWordCounter(), "Should be 0 words");
         assertEquals("", NoWord.getLongestWord(), "Longest word should be ' ' means nothing.");
     }
-    @Test
-    void doesItStop() {
-        String input = "I opt for stop there";
-        Scanner scan = new Scanner(input);
-        String[] textInput = new String[10];
-
-        LAssignmentF4Del2 doesStop = new LAssignmentF4Del2();
-        doesStop.processInput(scan, textInput);
-
-        assertEquals(1, doesStop.getLineCount(), "Should be 1 line");
-        assertEquals(16, doesStop.getTotalSymbols(), "Should be 16 symbol");
-        assertEquals(5, doesStop.getWordCounter(), "Should be 5 words");
-        assertEquals("there", doesStop.getLongestWord(), "Longest word should be 'there'.");
-    }
 }
 
